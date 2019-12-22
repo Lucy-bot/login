@@ -3,8 +3,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 ini_set('max_execution_time', 300); //300 seconds = 5 minutes. In case if your CURL is slow and is loading too much (Can be IPv6 problem)
 error_reporting(E_ALL);
-define('OAUTH2_CLIENT_ID', '1234567890');
-define('OAUTH2_CLIENT_SECRET', 'verysecretclientcode');
+define('OAUTH2_CLIENT_ID', '627370793369600011');
+define('OAUTH2_CLIENT_SECRET', 'XvsqlGP4mjKKROgkTn-1KauIJztYOaVs');
 $authorizeURL = 'https://discordapp.com/api/oauth2/authorize';
 $tokenURL = 'https://discordapp.com/api/oauth2/token';
 $apiURLBase = 'https://discordapp.com/api/users/@me';
@@ -13,7 +13,7 @@ session_start();
 if(get('action') == 'login') {
   $params = array(
     'client_id' => OAUTH2_CLIENT_ID,
-    'redirect_uri' => 'https://yoursite.location/ifyouneedit',
+    'redirect_uri' => 'https://lucy.js.org',
     'response_type' => 'code',
     'scope' => 'identify guilds'
   );
